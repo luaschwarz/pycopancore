@@ -23,11 +23,12 @@ from .implementation import World, Cell, Individual
 from .implementation import Culture
 
 
-"""Model mixin class."""
+class Model(I.Model):
+    """Model mixin class."""
 
-# mixins provided by this model component:
+    # mixins provided by this model component:
 
-entity_types = [World, Cell, Individual]
-"""list of entity types augmented by this component"""
-process_taxa = [Culture]
-"""list of process taxa augmented by this component"""
+    entity_types = [World, Cell, Individual]
+    """list of entity types augmented by this component"""
+    process_taxa = [Culture]
+    """list of process taxa augmented by this component"""

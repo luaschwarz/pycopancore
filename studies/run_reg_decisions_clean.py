@@ -26,8 +26,8 @@ import pylab as plt  # to plot stuff
 # instantiate the model and have it analyse its own structure:
 model = M.Model()
 
-
-# # coupled simulation years
+# model parameters
+# coupled simulation years
 start_year = 1981
 end_year = 2005
 
@@ -57,10 +57,11 @@ dt = 1  # desired temporal resolution of the resulting output.
 #     landuse_update_rate=landuse_update_rate,S
 #     landuse_update_prob=landuse_update_prob
 #     )
-
-# generate entities:
+# instantiate taxa:
 cul = M.Culture(
     )
+
+# generate entities:
 world = M.World(
     culture=cul,
     )
